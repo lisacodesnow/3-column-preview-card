@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General Styles */
+
+html{
+	font-size: 15pt;
+}
+
+p{
+	font-size: 1em;
+	font-family: 'Lexend Deca', sans-serif;
+	width: 90%;
+	line-height: 2em;
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1{
+	color:  hsl(0, 0%, 95%);
+	font-family: 'Big Shoulders Display', cursive;
+}
+
+main{
+	display: flex; 
+	flex-direction: column;
+	background-color:  hsl(0, 0%, 95%);
+	align-items: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.pic{
+	margin-bottom: 20px;
+}
+.sedan-container,
+.suv-container,
+.luxury-container{
+	width: 80%;
+	padding: 30px 10px 20px 30px;
+}
+
+
+.sedan-container{
+	background-color: hsl(31, 77%, 52%)
+		
+}
+
+.sedan-container .learn-btn p{
+	color: hsl(31, 77%, 52%);
+}
+
+.suv-container{
+	background-color: hsl(184, 100%, 22%)
+	
+}
+
+.suv-container .learn-btn p{
+	color: hsl(184, 100%, 22%);
+}
+
+.luxury-container{
+	background-color: hsl(179, 100%, 13%);
+	
+}
+
+.luxury-container .learn-btn p{
+	color: hsl(179, 100%, 13%);
+}
+
+.learn-btn{
+	border-style: solid;
+	border-radius: 50px;
+	border-width: thin;
+	color: hsl(0, 0%, 95%);
+	width: 50%;
+	background:hsl(0, 0%, 95%);
+	padding:0px;
+	margin-bottom: 30px;
+}
+.learn-btn p{
+	font-size: .75em;
+	text-align: center;
+	padding: 0px;
+}
