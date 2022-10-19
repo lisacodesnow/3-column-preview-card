@@ -86,6 +86,10 @@ main{
 	padding: 0px;
 }
 
+.attribution{
+	font-family: 'Lexend Deca', sans-serif;
+}
+
 @media (min-width: 1024px){
 	
 main{
