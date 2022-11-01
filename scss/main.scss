@@ -15,17 +15,26 @@ html{
 	font-size: 12pt;
 }
 
-main{
+body{
 	display: flex;
 	flex-direction: column;
+	align-content: center;
+	height: 100vh;
+	
+}
+main{
 	margin: 50px 20px;
 	img {
 		margin-top: 40px;
 	}
-	/*this applies properties to mains direct children*/
+	.content-wrapper{
+		display: flex;
+	flex-direction: column;
+	/*this applies properties to content-wrapper direct children (sedan, suv, luxury containers)*/
 	>* {
 		padding-left: 40px;
 	}
+	
 	.sedan-container{
 		background-color: $sedan-color;
 		h1{
@@ -85,6 +94,7 @@ main{
 		line-height: 1.50em;
 			width: 80%;
 	}
+} /*content-wrapper ends*/
 } /* main ends */
 
 .attribution { 
@@ -94,3 +104,40 @@ main{
 	.attribution a 
 	{ color: hsl(228, 45%, 44%); }
 };
+
+/* 1200px Screen Size */
+
+@media(min-width: 1200px){
+	
+	body{
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		
+		main{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-content: center;
+			margin: 0px;
+			width: 100%;
+			
+				.content-wrapper{
+				display: flex;
+				flex-direction: row;
+				width: 70%;
+				margin-bottom: 30px;
+
+					.sedan-info,
+					.suv-info,
+					.luxury-car-info{
+						line-height: 2em;
+						margin-bottom: 100px;
+						width: 70%;
+							}										
+	} /* content-wrapper ends */		
+}; /* main ends */	
+} /* body ends */
+} /*media query*/
+			
+				
