@@ -1,0 +1,96 @@
+// Scss Document
+
+/*General Styles */
+
+$paragraph-font: 'Lexend Deca', sans-serif;
+$title-font:'Big Shoulders Display', cursive;
+/*colors*/
+$title-color: hsl(0, 0%, 95%);
+$paragraph-color: hsla(0, 0%, 100%, 0.75);
+$sedan-color: hsl(31, 77%, 52%);
+$suv-color:  hsl(184, 100%, 22%);
+$luxury-color: hsl(179, 100%, 13%);
+
+html{
+	font-size: 12pt;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	margin: 50px 20px;
+	img {
+		margin-top: 40px;
+	}
+	/*this applies properties to mains direct children*/
+	>* {
+		padding-left: 40px;
+	}
+	.sedan-container{
+		background-color: $sedan-color;
+		h1{
+			font-family: $title-font;
+				color: $title-color;
+		}
+		p{
+			font-family: $paragraph-font;
+			color: $paragraph-color;
+		}
+		.learn-btn p{
+			color: $sedan-color;
+		}
+	}
+	.suv-container{
+		background-color: hsl(184, 100%, 22%);
+		h1{
+			font-family: $title-font;
+			color: $title-color;
+		}
+		p{
+			font-family: $paragraph-font;
+			color: $paragraph-color;
+		}
+		.learn-btn p{
+			color: $suv-color;
+		}
+	}
+	.luxury-container{
+		background-color: hsl(179, 100%, 13%);
+			h1{
+			font-family: $title-font;
+			color: $title-color;
+		}
+		p{
+			font-family: $paragraph-font;
+			color: $paragraph-color;
+		}
+		.learn-btn p{
+			color: $suv-color;
+		}
+	}
+	.learn-btn{
+		margin: 40px 0px;
+		border: 2px solid white;
+		border-radius: 30px;
+		width: 50%;
+		background-color: $title-color;
+			p{ text-align: center;
+			
+			}
+	}
+	
+	.sedan-info,
+	.suv-info,
+	.luxury-car-info{
+		line-height: 1.50em;
+			width: 80%;
+	}
+} /* main ends */
+
+.attribution { 
+	font-size: 1em; 
+	text-align: center; 
+	margin-bottom: 30px;
+	.attribution a 
+	{ color: hsl(228, 45%, 44%); }
+};

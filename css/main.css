@@ -1,124 +1,86 @@
-@charset "utf-8";
-/* CSS Document */
+/*General Styles */
+/*colors*/
+/* line 14, ../scss/main.scss */
+html {
+  font-size: 12pt; }
 
-/* General Styles */
+/* line 18, ../scss/main.scss */
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 20px;
+  /*this applies properties to mains direct children*/ }
+  /* line 22, ../scss/main.scss */
+  main img {
+    margin-top: 40px; }
+  /* line 26, ../scss/main.scss */
+  main > * {
+    padding-left: 40px; }
+  /* line 29, ../scss/main.scss */
+  main .sedan-container {
+    background-color: #e38826; }
+    /* line 31, ../scss/main.scss */
+    main .sedan-container h1 {
+      font-family: "Big Shoulders Display", cursive;
+      color: #f2f2f2; }
+    /* line 35, ../scss/main.scss */
+    main .sedan-container p {
+      font-family: "Lexend Deca", sans-serif;
+      color: rgba(255, 255, 255, 0.75); }
+    /* line 39, ../scss/main.scss */
+    main .sedan-container .learn-btn p {
+      color: #e38826; }
+  /* line 43, ../scss/main.scss */
+  main .suv-container {
+    background-color: #006970; }
+    /* line 45, ../scss/main.scss */
+    main .suv-container h1 {
+      font-family: "Big Shoulders Display", cursive;
+      color: #f2f2f2; }
+    /* line 49, ../scss/main.scss */
+    main .suv-container p {
+      font-family: "Lexend Deca", sans-serif;
+      color: rgba(255, 255, 255, 0.75); }
+    /* line 53, ../scss/main.scss */
+    main .suv-container .learn-btn p {
+      color: #006970; }
+  /* line 57, ../scss/main.scss */
+  main .luxury-container {
+    background-color: #004241; }
+    /* line 59, ../scss/main.scss */
+    main .luxury-container h1 {
+      font-family: "Big Shoulders Display", cursive;
+      color: #f2f2f2; }
+    /* line 63, ../scss/main.scss */
+    main .luxury-container p {
+      font-family: "Lexend Deca", sans-serif;
+      color: rgba(255, 255, 255, 0.75); }
+    /* line 67, ../scss/main.scss */
+    main .luxury-container .learn-btn p {
+      color: #006970; }
+  /* line 71, ../scss/main.scss */
+  main .learn-btn {
+    margin: 40px 0px;
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 50%;
+    background-color: #f2f2f2; }
+    /* line 77, ../scss/main.scss */
+    main .learn-btn p {
+      text-align: center; }
+  /* line 82, ../scss/main.scss */
+  main .sedan-info,
+  main .suv-info,
+  main .luxury-car-info {
+    line-height: 1.50em;
+    width: 80%; }
 
-html{
-	font-size: 15pt;
-}
-
-body{
-	background-color:  hsl(0, 0%, 95%);
-}
-
-p{
-	font-size: 1em;
-	font-family: 'Lexend Deca', sans-serif;
-	width: 90%;
-	line-height: 2em;
-	color: hsla(0, 0%, 100%, 0.75);
-}
-
-h1{
-	color:  hsl(0, 0%, 95%);
-	font-family: 'Big Shoulders Display', cursive;
-}
-
-main{
-	display: flex; 
-	flex-direction: column;
-	align-items: center;
-	padding-top: 80px;
-	padding-bottom: 40px;
-}
-
-.pic{
-	margin-bottom: 20px;
-}
-.sedan-container,
-.suv-container,
-.luxury-container{
-	width: 80%;
-	padding: 30px 10px 20px 30px;
-}
-
-
-.sedan-container{
-	background-color: hsl(31, 77%, 52%)
-		
-}
-
-.sedan-container .learn-btn p{
-	color: hsl(31, 77%, 52%);
-}
-
-.suv-container{
-	background-color: hsl(184, 100%, 22%)
-	
-}
-
-.suv-container .learn-btn p{
-	color: hsl(184, 100%, 22%);
-}
-
-.luxury-container{
-	background-color: hsl(179, 100%, 13%);
-	
-}
-
-.luxury-container .learn-btn p{
-	color: hsl(179, 100%, 13%);
-}
-
-.learn-btn{
-	border-style: solid;
-	border-radius: 50px;
-	border-width: thin;
-	color: hsl(0, 0%, 95%);
-	width: 50%;
-	background:hsl(0, 0%, 95%);
-	padding:0px;
-	margin-bottom: 30px;
-}
-.learn-btn p{
-	font-size: .75em;
-	text-align: center;
-	padding: 0px;
-}
-
-.attribution{
-	font-family: 'Lexend Deca', sans-serif;
-}
-
-@media (min-width: 1024px){
-	
-main{
-		display: flex;
-		flex-direction: row;
-		padding: 150px 150px 40px 150px;
-	}
-	
-.sedan-container p,
-.suv-container p,
-.luxury-container p{
-	padding-bottom: 100px;
-}
-	
-.suv-container .learn-btn p,
-.luxury-container .learn-btn p,
-.sedan-container .learn-btn p{
-	padding: 0px;
-	color: hsl(0, 0%, 95%);
-}
-	
-	.learn-btn{
-	border-style: solid;
-	border-radius: 50px;
-	border-width: thin;
-	background: none;
-	width: 50%;
-	padding:0px;
-	margin-bottom: 30px;
-}
-	
-}
+/* main ends */
+/* line 90, ../scss/main.scss */
+.attribution {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 30px; }
+  /* line 94, ../scss/main.scss */
+  .attribution .attribution a {
+    color: #3e52a3; }
