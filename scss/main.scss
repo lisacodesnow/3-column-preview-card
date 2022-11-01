@@ -1,10 +1,13 @@
 // Scss Document
 
-/*General Styles */
+
+/* font variables*/
 
 $paragraph-font: 'Lexend Deca', sans-serif;
 $title-font:'Big Shoulders Display', cursive;
-/*colors*/
+
+/*color variables*/
+
 $title-color: hsl(0, 0%, 95%);
 $paragraph-color: hsla(0, 0%, 100%, 0.75);
 $sedan-color: hsl(31, 77%, 52%);
@@ -21,7 +24,7 @@ body{
 	align-content: center;
 	height: 100vh;
 	
-}
+
 main{
 	margin: 50px 20px;
 	img {
@@ -96,6 +99,7 @@ main{
 	}
 } /*content-wrapper ends*/
 } /* main ends */
+} /*body ends */
 
 .attribution { 
 	font-size: 1em; 

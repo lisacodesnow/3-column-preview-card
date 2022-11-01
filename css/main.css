@@ -1,109 +1,109 @@
-/*General Styles */
-/*colors*/
-/* line 14, ../scss/main.scss */
+/* font variables*/
+/*color variables*/
+/* line 17, ../scss/main.scss */
 html {
   font-size: 12pt; }
 
-/* line 18, ../scss/main.scss */
+/* line 21, ../scss/main.scss */
 body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  height: 100vh; }
+  height: 100vh;
+  /* main ends */ }
+  /* line 28, ../scss/main.scss */
+  body main {
+    margin: 50px 20px;
+    /*content-wrapper ends*/ }
+    /* line 30, ../scss/main.scss */
+    body main img {
+      margin-top: 40px; }
+    /* line 33, ../scss/main.scss */
+    body main .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      /*this applies properties to content-wrapper direct children (sedan, suv, luxury containers)*/ }
+      /* line 37, ../scss/main.scss */
+      body main .content-wrapper > * {
+        padding-left: 40px; }
+      /* line 41, ../scss/main.scss */
+      body main .content-wrapper .sedan-container {
+        background-color: #e38826; }
+        /* line 43, ../scss/main.scss */
+        body main .content-wrapper .sedan-container h1 {
+          font-family: "Big Shoulders Display", cursive;
+          color: #f2f2f2; }
+        /* line 47, ../scss/main.scss */
+        body main .content-wrapper .sedan-container p {
+          font-family: "Lexend Deca", sans-serif;
+          color: rgba(255, 255, 255, 0.75); }
+        /* line 51, ../scss/main.scss */
+        body main .content-wrapper .sedan-container .learn-btn p {
+          color: #e38826; }
+      /* line 55, ../scss/main.scss */
+      body main .content-wrapper .suv-container {
+        background-color: #006970; }
+        /* line 57, ../scss/main.scss */
+        body main .content-wrapper .suv-container h1 {
+          font-family: "Big Shoulders Display", cursive;
+          color: #f2f2f2; }
+        /* line 61, ../scss/main.scss */
+        body main .content-wrapper .suv-container p {
+          font-family: "Lexend Deca", sans-serif;
+          color: rgba(255, 255, 255, 0.75); }
+        /* line 65, ../scss/main.scss */
+        body main .content-wrapper .suv-container .learn-btn p {
+          color: #006970; }
+      /* line 69, ../scss/main.scss */
+      body main .content-wrapper .luxury-container {
+        background-color: #004241; }
+        /* line 71, ../scss/main.scss */
+        body main .content-wrapper .luxury-container h1 {
+          font-family: "Big Shoulders Display", cursive;
+          color: #f2f2f2; }
+        /* line 75, ../scss/main.scss */
+        body main .content-wrapper .luxury-container p {
+          font-family: "Lexend Deca", sans-serif;
+          color: rgba(255, 255, 255, 0.75); }
+        /* line 79, ../scss/main.scss */
+        body main .content-wrapper .luxury-container .learn-btn p {
+          color: #006970; }
+      /* line 83, ../scss/main.scss */
+      body main .content-wrapper .learn-btn {
+        margin: 40px 0px;
+        border: 2px solid white;
+        border-radius: 30px;
+        width: 50%;
+        background-color: #f2f2f2; }
+        /* line 89, ../scss/main.scss */
+        body main .content-wrapper .learn-btn p {
+          text-align: center; }
+      /* line 94, ../scss/main.scss */
+      body main .content-wrapper .sedan-info,
+      body main .content-wrapper .suv-info,
+      body main .content-wrapper .luxury-car-info {
+        line-height: 1.50em;
+        width: 80%; }
 
-/* line 25, ../scss/main.scss */
-main {
-  margin: 50px 20px;
-  /*content-wrapper ends*/ }
-  /* line 27, ../scss/main.scss */
-  main img {
-    margin-top: 40px; }
-  /* line 30, ../scss/main.scss */
-  main .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    /*this applies properties to content-wrapper direct children (sedan, suv, luxury containers)*/ }
-    /* line 34, ../scss/main.scss */
-    main .content-wrapper > * {
-      padding-left: 40px; }
-    /* line 38, ../scss/main.scss */
-    main .content-wrapper .sedan-container {
-      background-color: #e38826; }
-      /* line 40, ../scss/main.scss */
-      main .content-wrapper .sedan-container h1 {
-        font-family: "Big Shoulders Display", cursive;
-        color: #f2f2f2; }
-      /* line 44, ../scss/main.scss */
-      main .content-wrapper .sedan-container p {
-        font-family: "Lexend Deca", sans-serif;
-        color: rgba(255, 255, 255, 0.75); }
-      /* line 48, ../scss/main.scss */
-      main .content-wrapper .sedan-container .learn-btn p {
-        color: #e38826; }
-    /* line 52, ../scss/main.scss */
-    main .content-wrapper .suv-container {
-      background-color: #006970; }
-      /* line 54, ../scss/main.scss */
-      main .content-wrapper .suv-container h1 {
-        font-family: "Big Shoulders Display", cursive;
-        color: #f2f2f2; }
-      /* line 58, ../scss/main.scss */
-      main .content-wrapper .suv-container p {
-        font-family: "Lexend Deca", sans-serif;
-        color: rgba(255, 255, 255, 0.75); }
-      /* line 62, ../scss/main.scss */
-      main .content-wrapper .suv-container .learn-btn p {
-        color: #006970; }
-    /* line 66, ../scss/main.scss */
-    main .content-wrapper .luxury-container {
-      background-color: #004241; }
-      /* line 68, ../scss/main.scss */
-      main .content-wrapper .luxury-container h1 {
-        font-family: "Big Shoulders Display", cursive;
-        color: #f2f2f2; }
-      /* line 72, ../scss/main.scss */
-      main .content-wrapper .luxury-container p {
-        font-family: "Lexend Deca", sans-serif;
-        color: rgba(255, 255, 255, 0.75); }
-      /* line 76, ../scss/main.scss */
-      main .content-wrapper .luxury-container .learn-btn p {
-        color: #006970; }
-    /* line 80, ../scss/main.scss */
-    main .content-wrapper .learn-btn {
-      margin: 40px 0px;
-      border: 2px solid white;
-      border-radius: 30px;
-      width: 50%;
-      background-color: #f2f2f2; }
-      /* line 86, ../scss/main.scss */
-      main .content-wrapper .learn-btn p {
-        text-align: center; }
-    /* line 91, ../scss/main.scss */
-    main .content-wrapper .sedan-info,
-    main .content-wrapper .suv-info,
-    main .content-wrapper .luxury-car-info {
-      line-height: 1.50em;
-      width: 80%; }
-
-/* main ends */
-/* line 100, ../scss/main.scss */
+/*body ends */
+/* line 104, ../scss/main.scss */
 .attribution {
   font-size: 1em;
   text-align: center;
   margin-bottom: 30px; }
-  /* line 104, ../scss/main.scss */
+  /* line 108, ../scss/main.scss */
   .attribution .attribution a {
     color: #3e52a3; }
 
 /* 1200px Screen Size */
 @media (min-width: 1200px) {
-  /* line 112, ../scss/main.scss */
+  /* line 116, ../scss/main.scss */
   body {
     display: flex;
     align-content: center;
     justify-content: center;
     /* main ends */ }
-    /* line 117, ../scss/main.scss */
+    /* line 121, ../scss/main.scss */
     body main {
       display: flex;
       flex-direction: row;
@@ -112,13 +112,13 @@ main {
       margin: 0px;
       width: 100%;
       /* content-wrapper ends */ }
-      /* line 125, ../scss/main.scss */
+      /* line 129, ../scss/main.scss */
       body main .content-wrapper {
         display: flex;
         flex-direction: row;
         width: 70%;
         margin-bottom: 30px; }
-        /* line 131, ../scss/main.scss */
+        /* line 135, ../scss/main.scss */
         body main .content-wrapper .sedan-info,
         body main .content-wrapper .suv-info,
         body main .content-wrapper .luxury-car-info {
